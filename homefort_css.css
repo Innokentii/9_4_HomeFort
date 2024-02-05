@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@800&display=swap');
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;;
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/*==========ШАПКА_САЙТА==========*/
+
+.head_HF_cl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(45deg, #e1c86b, #e1c86b, #ddbe4e, #e5b91c, #f4c003);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.head_HF_cl > img {
+    height: 15vh;
+}
+
+.head_HF_cl > div {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bolder;
+    color: #222d2b;
+    padding-right: 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.head_HF_cl > div > div {
+    padding-left: 10px;
+}
+
+.head_HF_contacts_cl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: start;
+    font-size: 18px;
+    font-weight: 400;
+    color: #222d2b;
+}
+
+.head_HF_contacts_cl > div > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.head_HF_contacts_cl > div:nth-child(1) > a > img {
+    width: 30px;
+    height: 30px;
+}
+
+.head_HF_bufer_cl {
+    /*БУФЕР*/
+    height: 15vh;
+}
+
+#buttom_phone_catalog_id {
+    padding-right: 20px;
+    justify-content: end;
+    display: none;
+}
+
+#buttom_phone_catalog_id:hover {
+    cursor: pointer;
+}
+
+#buttom_phone_catalog_row_id {
+    position: fixed;
+    top: 15vh;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, #e1c86b, #e1c86b, #ddbe4e, #e5b91c, #f4c003);
+    padding-bottom: 20px;
+    width: 200px;
+}
+
+#buttom_phone_catalog_row_id > div {
+    cursor: pointer;
+}
+
+@media (max-width: 580px) {
+    #buttom_main_catalog_id {
+        display: none;
+    }
+    #buttom_phone_catalog_id {
+        display: flex;
+    }
+}
+
+#buttom_phone_catalog_id > img {
+    height: 10vh;
+}
+
+.buttom_main_catalog_cl > div {
+    transition: 300ms;
+}
+
+.buttom_main_catalog_cl > div:hover {
+    cursor: pointer;
+    font-size: 27px;
+}
+
+/*==========ВСТРЕЧАЮЩАЯ_СТРАНИЦА==========*/
+
+.georgian_bg_cl {
+    width: 100%;
+    height: 85vh;
+    background-image: url(georgian_background.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+}
+
+.black_filter_bg_cl {
+    /*Темный фильтр*/
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.85), rgba(0, 0, 0,  0.90), rgba(0, 0, 0,  0.95), rgba(0, 0, 0,  1));
+}
+
+.georgian_text_cl {
+    background: linear-gradient(90deg, rgba(0, 0, 0,  0.2), rgba(0, 0, 0,  1));
+    padding: 25px;
+    position: absolute;
+    top: 18vh;
+    right: 0;
+}
+
+.georgian_text_cl > h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Saira Stencil One', sans-serif;
+    color: #e1c86b;
+}
+
+.georgian_text_cl > h2 {
+    margin: 0;
+    font-size: 45px;
+    color: #e1c86b;
+}
+
+.georgian_text_cl > h2:nth-child(3) {
+    color: white;
+    font-size: 35px;
+}
+
+.georgian_text_2_cl {
+    height: 45vh;
+    padding: 25px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.georgian_text_2_cl > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 5px;
+    align-items: center;
+    font-size: 24px;
+    color: #e1c86b;
+}
+
+.georgian_text_2_row_cl {
+    display: flex;
+    flex-direction: column;
+}
+
+.georgian_text_2_row_cl > div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.georgian_text_2_row_cl > div > span:nth-child(1) {
+    color: white;
+}
+
+.georgian_text_3_cl {
+    height: 45vh;
+    padding: 25px;
+    position: absolute;
+    right: 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.georgian_text_3_cl > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 5px;
+    align-items: center;
+    font-size: 24px;
+    color: #e1c86b;
+}
+
+/*==========ОПИСАНИЕ_ХОСТЕЛА==========*/
+
+.description_hostel_cl {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about_us_cl {
+    width: 40vw;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.audio_video_cl {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.audio_video_cl > div {
+    width: 240px;
+    height: 240px;
+    border: 2px solid rgb(47, 46, 46);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio_video_cl > div:hover {
+    cursor: pointer;
+}
+
+.fog_video_cl {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background-color: white;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fog_video_cl > img {
+    height: 80px;
+}
+
+@media (max-width: 1000px) {
+    .description_hostel_cl {
+        flex-direction: column;
+    }
+    .about_us_cl, .audio_video_cl {
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_us_cl {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .audio_video_cl > div {
+        width: 150px;
+        height: 150px;
+    }
+    .fog_video_cl {
+        width: 150px;
+        height: 150px;
+    }
+    .fog_video_cl > img {
+        height: 60px;
+    }
+}
+
+.viewing_photos_cl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(11, 11, 11);
+    opacity: 0.9;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewing_photos_card_cl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewing_photos_card_cl > img {
+    width: 100vw;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+.viewing_photos_close_cl {
+    position: fixed;
+    top: 40px;
+    right: 40vw;
+    font-size: 30px;
+    color: #e1c86b;
+    font-weight: bolder;
+    background-color: rgb(81, 79, 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#viewing_photos_close_id {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.viewing_photos_close_cl:hover {
+    cursor: pointer;
+}
+
+/*==========КОМНАТЫ==========*/
+
+.room_cl {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(almaty.jpg);
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.room_info_cl {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.room_info_left_cl {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 3px 3px 3px black;
+    padding-left: 15px;
+}
+
+.room_info_left_cl > h2 {
+    color: #e1c86b;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.room_info_left_cl > p {
+    color: white;
+    margin: 2.5px;
+    font-size: 20px;
+}
+
+.room_info_right_cl {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+}
+
+.room_info_right_cl > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.room_info_right_cl > div > div {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(81, 79, 79);
+    border-radius: 5px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.room_info_right_cl > div:nth-child(1) > div {
+    background-color: green;
+}
+
+.room_info_right_cl > div:nth-child(2) > div {
+    background-color: red;
+}
+
+.room_info_right_cl > div:nth-child(3) > div {
+    background-color: white;
+}
+
+.floor_cl {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ground_floor_cl {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+}
+
+.ground_floor_cl > h2 {
+    color: #e1c86b;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.ground_floor_cl > div {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ground_floor_cl > div > h3 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.ground_floor_cl > div > div {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.beds_cl {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.beds_cl > h4 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: green;
+    text-shadow: 1px 1px 1px black;
+}
+
+.beds_cl > div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.beds_cl > div > div {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(81, 79, 79);
+    border-radius: 5px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*==========ОПИСАНИЕ_ХОСТЕЛА==========*/
+
+.contacts_cl {
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts_info_cl {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    position: absolute;
+    left: 50px;
+    z-index: 998;
+    backdrop-filter: blur(4px);
+}
+
+.contacts_info_cl > h2 {
+    margin: 0;
+    color: #e1c86b;
+    font-size: 45px;
+}
+
+.table_cl {
+    border-collapse: collapse;
+}
+
+.table_cl > thead > tr > th, .table_cl > thead > tr > td {
+    border: solid 2px rgb(81, 79, 79);
+    color: white;
+    font-size: 24px;
+}
+
+.table_cl > thead > tr > th:nth-child(1), .table_cl > thead > tr > td:nth-child(1) {
+    width: 30px;
+    text-align: center;
+}
+
+.table_cl > thead > tr > th:nth-child(2) {
+    width: 180px;
+}
+
+.table_cl > thead > tr > th:nth-child(3) {
+    width: 260px;
+}
+
+.table_cl > thead > tr > td:nth-child(2), .table_cl > thead > tr > td:nth-child(3) {
+    padding-left: 10px;
+}
+
+/*==========КОНТАКТЫ==========*/
+
+.footer_cl {
+    height: 5vh;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(45deg, #e1c86b, #e1c86b, #ddbe4e, #e5b91c, #f4c003);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
